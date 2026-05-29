@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 const pspSparta = [
   ["Pembina", ["Desi Indah Kurniasari"]],
@@ -46,30 +47,330 @@ function StrukturCard({ title, names }) {
   )
 }
 
-function StrukturSection({ id, logo, title, school, data }) {
+function UnitPage({ logo, title, school, data, onBack }) {
   return (
-    <section id={id} className="px-5 md:px-10 py-20 md:py-24 bg-black">
-      <div className="flex flex-col items-center text-center mb-14">
-        <img src={logo} alt={title} className="w-24 h-24 object-contain mb-5" />
-        <h2 className="text-3xl md:text-5xl font-bold text-yellow-500">
-          {title}
-        </h2>
-        <p className="text-gray-300 mt-3">{school}</p>
+    <div className="bg-black text-white min-h-screen">
+      <nav className="flex justify-between items-center px-5 md:px-10 py-6 border-b border-red-900/60 bg-black">
+        <button onClick={onBack} className="text-yellow-500 hover:text-white transition">
+          ← Kembali ke SPARTA Center
+        </button>
+
+        <h1 className="text-xl md:text-2xl font-bold tracking-[4px] text-yellow-500">
+          SPARTA
+        </h1>
+      </nav>
+{title === "SPARTA 31" && (
+  <section className="px-5 md:px-10 py-16">
+
+    <h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+      BADAN PENGURUS HARIAN SPARTA 31
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-16">
+
+      <div className="flex flex-col items-center group">
+        <div className="h-96 flex items-end justify-center">
+          <img
+            src="/pengurus31/putri-sekar.png"
+            alt="Putri Sekar Ayu"
+            className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-2xl font-bold mt-4">Putri Sekar Ayu</h3>
+        <p className="text-yellow-500">Ketua</p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {data.map(([jabatan, names], index) => (
-          <StrukturCard key={index} title={jabatan} names={names} />
-        ))}
+      <div className="flex flex-col items-center group">
+        <div className="h-96 flex items-end justify-center">
+          <img
+            src="/pengurus31/tiara-putri.png"
+            alt="Tiara Putri"
+            className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-2xl font-bold mt-4">Tiara Putri</h3>
+        <p className="text-yellow-500">Wakil Senior</p>
       </div>
-    </section>
+
+      <div className="flex flex-col items-center group">
+        <div className="h-96 flex items-end justify-center">
+          <img
+            src="/pengurus31/rhaniaqyla.png"
+            alt="Rhaniaqyla"
+            className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-2xl font-bold mt-4">Rhaniaqyla</h3>
+        <p className="text-yellow-500">Wakil Junior</p>
+      </div>
+
+      <div className="flex flex-col items-center group">
+        <div className="h-96 flex items-end justify-center">
+          <img
+            src="/pengurus31/iffa-dwi.png"
+            alt="Iffa Dwi"
+            className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-2xl font-bold mt-4">Iffa Dwi</h3>
+        <p className="text-yellow-500">Sekretaris</p>
+        <div className="mt-4 border-t border-yellow-500/20 pt-3">
+  <p className="text-sm text-gray-300">
+    Nazwa Fauziyah
+  </p>
+
+  <p className="text-xs text-gray-500">
+    Sie. Sekretaris
+  </p>
+</div>
+      </div>
+
+      <div className="flex flex-col items-center group">
+        <div className="h-96 flex items-end justify-center">
+          <img
+            src="/pengurus31/tsabita-zanzabila.png"
+            alt="Tsabita Zanzabila"
+            className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-2xl font-bold mt-4">Tsabita Zanzabila</h3>
+        <p className="text-yellow-500">Bendahara</p>
+        <div className="mt-4 border-t border-yellow-500/20 pt-3">
+  <p className="text-sm text-gray-300">
+    Feenezia Malilah
+  </p>
+
+  <p className="text-xs text-gray-500">
+    Sie. Bendahara
+  </p>
+</div>
+      </div>
+
+    </div>
+<div className="mt-24">
+
+<h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+  KOORDINATOR BIDANG
+</h2>
+
+<div className="grid md:grid-cols-4 gap-16">
+
+  <div className="flex flex-col items-center group">
+
+    <div className="h-80 flex items-end justify-center">
+      <img
+        src="/pengurus31/karla-aleena.png"
+        alt="Karla Aleena"
+        className="max-h-full object-contain"
+      />
+    </div>
+
+    <h3 className="text-xl font-bold mt-4">
+      Karla Aleena
+    </h3>
+
+    <p className="text-yellow-500">
+      Koor. Humas
+    </p>
+
+    <div className="mt-4 flex flex-col items-center">
+      <img
+        src="/pengurus31/melia-putri-sabiyan.png"
+        alt="Melia Putri Sabiyan"
+        className="h-64 object-contain"
+      />
+
+      <h4 className="text-lg font-semibold">
+        Melia Putri Sabiyan
+      </h4>
+
+      <p className="text-gray-400 text-sm">
+        Sie. Humas
+      </p>
+    </div>
+
+  </div>
+
+    <div className="flex flex-col items-center group">
+      <div className="h-80 flex items-end justify-center">
+        <img
+          src="/pengurus31/rafael-al-fariji.png"
+          alt="Rafael Al Fariji"
+          className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+        />
+      </div>
+<h3 className="text-xl font-bold mt-4">
+  Rafael Al Fariji
+</h3>
+
+<p className="text-yellow-500">
+  Koor. Logistik
+</p>
+
+<div className="mt-4 border-t border-yellow-500/20 pt-3">
+
+  <p className="text-sm text-gray-300">
+    Annisa Isna Kusuma
+  </p>
+
+  <p className="text-xs text-gray-500">
+    Sie. Logistik
+  </p>
+
+  <p className="text-sm text-gray-300 mt-2">
+    Cahaya Khayla Putri
+  </p>
+
+  <p className="text-xs text-gray-500">
+    Sie. Logistik
+  </p>
+
+</div>
+    </div>
+
+    <div className="flex flex-col items-center group">
+      <div className="h-80 flex items-end justify-center">
+        <img
+          src="/pengurus31/farhan-ardiansyah.png"
+          alt="Farhan Ardiansyah"
+          className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+        />
+      </div>
+<h3 className="text-xl font-bold mt-4">
+  Farhan Ardiansyah
+</h3>
+
+<p className="text-yellow-500">
+  Koor. Binlat
+</p>
+
+<div className="mt-4 border-t border-yellow-500/20 pt-3">
+
+  <p className="text-sm text-gray-300">
+    Syakeela Lyvia
+  </p>
+
+  <p className="text-xs text-gray-500">
+    Sie. Binlat
+  </p>
+
+</div>
+    </div>
+
+    <div className="flex flex-col items-center group">
+      <div className="h-80 flex items-end justify-center">
+        <img
+          src="/pengurus31/annisa-azzahra.png"
+          alt="Annisa Azzahra"
+          className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+        />
+      </div>
+<h3 className="text-xl font-bold mt-4">
+  Annisa Azzahra
+</h3>
+
+<p className="text-yellow-500">
+  Koor. Bina Lomba
+</p>
+
+<div className="mt-4 border-t border-yellow-500/20 pt-3">
+
+  <p className="text-sm text-gray-300">
+    Yuanita Kristin
+  </p>
+
+  <p className="text-xs text-gray-500">
+    Sie. Bina Lomba
+  </p>
+
+</div>
+    </div>
+
+  </div>
+
+</div>
+  </section>
+)}
+      <section className="px-5 md:px-10 py-20 bg-gradient-to-b from-black to-zinc-950">
+        <div className="flex flex-col items-center text-center mb-14">
+          <img src={logo} alt={title} className="w-28 h-28 object-contain mb-5" />
+
+          <h2 className="text-3xl md:text-5xl font-bold text-yellow-500">
+            {title}
+          </h2>
+
+          <p className="text-gray-300 mt-3">{school}</p>
+
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            <a href="#struktur" className="px-5 py-3 rounded-xl bg-yellow-500 text-black font-semibold">
+              Struktur
+            </a>
+            <a href="#absensi-unit" className="px-5 py-3 rounded-xl bg-red-900 text-white font-semibold">
+              Absensi
+            </a>
+            <a href="#galeri-unit" className="px-5 py-3 rounded-xl bg-zinc-800 text-white font-semibold">
+              Galeri
+            </a>
+          </div>
+        </div>
+
+        <section id="struktur" className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {data.map(([jabatan, names], index) => (
+            <StrukturCard key={index} title={jabatan} names={names} />
+          ))}
+        </section>
+      </section>
+
+      <section id="absensi-unit" className="px-5 md:px-10 py-20 bg-black">
+        <h2 className="text-3xl md:text-5xl font-bold text-yellow-500 text-center mb-4">
+          ABSENSI {title}
+        </h2>
+        <p className="text-center text-gray-300">
+          Nanti area ini jadi tempat input dan dashboard absensi khusus {school}.
+        </p>
+      </section>
+
+      <section id="galeri-unit" className="px-5 md:px-10 py-20 bg-zinc-950">
+        <h2 className="text-3xl md:text-5xl font-bold text-yellow-500 text-center mb-4">
+          GALERI {title}
+        </h2>
+        <p className="text-center text-gray-300">
+          Nanti galeri ini khusus dokumentasi {school}.
+        </p>
+      </section>
+    </div>
   )
 }
 
 export default function App() {
+  const [page, setPage] = useState("home")
+
+  if (page === "psp") {
+    return (
+      <UnitPage
+        logo="/psp-sparta.png"
+        title="PSP SPARTA"
+        school="SMA Negeri 90 Jakarta"
+        data={pspSparta}
+        onBack={() => setPage("home")}
+      />
+    )
+  }
+
+  if (page === "sparta31") {
+    return (
+      <UnitPage
+        logo="/sparta31.png"
+        title="SPARTA 31"
+        school="SMP Negeri 31 Jakarta"
+        data={sparta31}
+        onBack={() => setPage("home")}
+      />
+    )
+  }
+
   return (
     <div className="bg-black text-white min-h-screen">
-
       <section className="relative min-h-screen overflow-hidden">
         <div className="absolute inset-0">
           <video autoPlay loop muted playsInline className="w-full h-full object-cover">
@@ -148,102 +449,75 @@ export default function App() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-3xl md:text-5xl font-bold text-center text-yellow-500 mb-12 md:mb-16"
+          className="text-3xl md:text-5xl font-bold text-center text-yellow-500 mb-4"
         >
-          UNIT SPARTA
+          SPARTA CENTER
         </motion.h2>
+
+        <p className="text-center text-gray-300 mb-12">
+          Pilih ruang unit untuk melihat struktur, absensi, dan galeri masing-masing sekolah.
+        </p>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-10">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
             whileHover={{ scale: 1.03 }}
             className="bg-gradient-to-br from-red-950 to-black border border-yellow-500/30 rounded-3xl p-7 md:p-10 shadow-2xl"
           >
             <div className="flex items-center gap-4">
               <img src="/psp-sparta.png" alt="PSP SPARTA" className="w-16 h-16 object-contain" />
-              <h3 className="text-3xl md:text-4xl font-bold text-yellow-500">SMA NEGERI 90</h3>
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold text-yellow-500">PSP SPARTA</h3>
+                <p className="text-gray-300">SMA Negeri 90 Jakarta</p>
+              </div>
             </div>
 
-            <p className="mt-6 text-gray-300 leading-8 text-sm md:text-base">
-              PSP SPARTA — SMA Negeri 90 Jakarta.
-            </p>
-
-            <a href="#pengurus90" className="inline-block mt-8 px-6 py-3 bg-yellow-500 text-black rounded-xl font-semibold hover:scale-105 transition">
-              LIHAT STRUKTUR
-            </a>
+            <button
+              onClick={() => setPage("psp")}
+              className="mt-8 px-6 py-3 bg-yellow-500 text-black rounded-xl font-semibold hover:scale-105 transition"
+            >
+              MASUK RUANG 90
+            </button>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
             whileHover={{ scale: 1.03 }}
             className="bg-gradient-to-br from-zinc-900 to-black border border-white/20 rounded-3xl p-7 md:p-10 shadow-2xl"
           >
             <div className="flex items-center gap-4">
               <img src="/sparta31.png" alt="SPARTA 31" className="w-16 h-16 object-contain" />
-              <h3 className="text-3xl md:text-4xl font-bold text-white">SMP NEGERI 31</h3>
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold text-white">SPARTA 31</h3>
+                <p className="text-gray-300">SMP Negeri 31 Jakarta</p>
+              </div>
             </div>
 
-            <p className="mt-6 text-gray-300 leading-8 text-sm md:text-base">
-              SPARTA 31 — SMP Negeri 31 Jakarta.
-            </p>
-
-            <a href="#pengurus31" className="inline-block mt-8 px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition">
-              LIHAT STRUKTUR
-            </a>
+            <button
+              onClick={() => setPage("sparta31")}
+              className="mt-8 px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
+            >
+              MASUK RUANG 31
+            </button>
           </motion.div>
         </div>
       </section>
 
-      <StrukturSection
-        id="pengurus90"
-        logo="/psp-sparta.png"
-        title="STRUKTUR PSP SPARTA"
-        school="SMA Negeri 90 Jakarta"
-        data={pspSparta}
-      />
-
-      <StrukturSection
-        id="pengurus31"
-        logo="/sparta31.png"
-        title="STRUKTUR SPARTA 31"
-        school="SMP Negeri 31 Jakarta"
-        data={sparta31}
-      />
-
-      <section id="galeri" className="px-5 md:px-10 py-20 md:py-24 bg-zinc-950">
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-3xl md:text-5xl font-bold text-center text-yellow-500 mb-4"
-        >
+      <section id="galeri" className="px-5 md:px-10 py-20 md:py-24 bg-black">
+        <h2 className="text-3xl md:text-5xl font-bold text-center text-yellow-500 mb-4">
           GALERI SPARTA
-        </motion.h2>
-
-        <p className="text-center text-gray-300 text-sm md:text-base">
-          Dokumentasi latihan, lomba, formasi, dan momen kebersamaan SPARTA.
+        </h2>
+        <p className="text-center text-gray-300">
+          Galeri utama SPARTA. Galeri khusus sekolah ada di ruang masing-masing.
         </p>
       </section>
 
-      <section id="absensi" className="px-5 md:px-10 py-20 md:py-24 bg-black">
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-3xl md:text-5xl font-bold text-center text-yellow-500 mb-4"
-        >
+      <section id="absensi" className="px-5 md:px-10 py-20 md:py-24 bg-zinc-950">
+        <h2 className="text-3xl md:text-5xl font-bold text-center text-yellow-500 mb-4">
           ABSENSI SPARTA
-        </motion.h2>
-
-        <p className="text-center text-gray-300 text-sm md:text-base">
-          Preview data absensi anggota SPARTA.
+        </h2>
+        <p className="text-center text-gray-300">
+          Sistem absensi pusat. Nanti datanya dipisah antara PSP SPARTA dan SPARTA 31.
         </p>
       </section>
-
     </div>
   )
-} 
+}

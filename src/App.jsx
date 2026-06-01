@@ -59,8 +59,419 @@ function UnitPage({ logo, title, school, data, onBack }) {
           SPARTA
         </h1>
       </nav>
+
+{title === "PSP SPARTA" && (
+  <section className="px-5 md:px-10 py-16">
+
+    <h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+      PEMBINA & PELATIH PSP SPARTA
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-16 mb-24">
+      <div className="flex flex-col items-center group">
+        <div className="h-96 flex items-end justify-center">
+          <img
+            src="/pengurus90/desi-indah-kurniasari.png"
+            alt="Desi Indah Kurniasari"
+            className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-2xl font-bold mt-4">Desi Indah Kurniasari</h3>
+        <p className="text-yellow-500">Pembina</p>
+      </div>
+
+      <div className="flex flex-col items-center group">
+        <div className="h-96 flex items-end justify-center">
+          <img
+            src="/pengurus90/fitra-akbar.png"
+            alt="Fitra Akbar"
+            className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-2xl font-bold mt-4">Fitra Akbar</h3>
+        <p className="text-yellow-500">Pelatih</p>
+      </div>
+    </div>
+
+<h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+  BADAN PENGURUS HARIAN PSP SPARTA
+</h2>
+
+<div className="grid md:grid-cols-2 gap-16 mb-24">
+
+  <div className="flex flex-col items-center group">
+    <div className="h-[500] flex items-end justify-center">
+      <img
+        src="/pengurus90/alif-pratama-alghifari.png"
+        alt="Alif Pratama Alghifari"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+      />
+    </div>
+
+    <h3 className="text-2xl font-bold mt-4">
+      Alif Pratama Alghifari
+    </h3>
+
+    <p className="text-yellow-500">
+      Ketua
+    </p>
+  </div>
+
+  <div className="flex flex-col items-center group">
+    <div className="h-[500] flex items-end justify-center">
+      <img
+        src="/pengurus90/nazzah-sisilia-shafa.png"
+        alt="Nazzah Sisilia Shafa"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+      />
+    </div>
+
+    <h3 className="text-2xl font-bold mt-4">
+      Nazzah Sisilia Shafa
+    </h3>
+
+    <p className="text-yellow-500">
+      Wakil
+    </p>
+  </div>
+
+</div>
+
+<div className="grid md:grid-cols-2 gap-16 mb-24">
+
+  <div className="flex flex-col items-center group">
+    <div className="h-96 flex items-end justify-center">
+      <img
+        src="/pengurus90/rizka-farisha.png"
+        alt="Rizka Farisha"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+      />
+    </div>
+
+    <h3 className="text-2xl font-bold mt-4">
+      Rizka Farisha
+    </h3>
+
+    <p className="text-yellow-500">
+      Koor. Sekretaris
+    </p>
+
+    <div className="mt-6 border-t border-yellow-500/20 pt-6 flex flex-col items-center">
+  <div className="h-72 flex items-end justify-center">
+    <img
+      src="/pengurus90/lanika-rianti-putri.png"
+      alt="Lanika Rianti Putri"
+      className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+    />
+  </div>
+
+  <h4 className="text-lg font-semibold mt-3">
+    Lanika Rianti Putri
+  </h4>
+
+  <p className="text-gray-400 text-sm">
+    Sekretaris
+  </p>
+</div>
+  </div>
+
+  <div className="flex flex-col items-center group">
+    <div className="h-96 flex items-end justify-center">
+      <img
+        src="/pengurus90/dyah-putri-ramadhani.png"
+        alt="Dyah Putri Ramadhani"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+      />
+    </div>
+
+    <h3 className="text-2xl font-bold mt-4">
+      Dyah Putri Ramadhani
+    </h3>
+
+    <p className="text-yellow-500">
+      Koor. Bendahara
+    </p>
+
+    <div className="mt-6 border-t border-yellow-500/20 pt-6 flex flex-col items-center">
+  <div className="h-72 flex items-end justify-center">
+    <img
+      src="/pengurus90/jihan-halwa-raisah.png"
+      alt="Jihan Halwa Raisah"
+      className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+    />
+  </div>
+
+  <h4 className="text-lg font-semibold mt-3">
+    Jihan Halwa Raisah
+  </h4>
+
+  <p className="text-gray-400 text-sm">
+    Bendahara
+  </p>
+</div>
+  </div>
+
+</div>
+    <h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+      KOORDINATOR BIDANG PSP SPARTA
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-10 mb-24">
+      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center">
+
+  <h3 className="text-3xl font-bold text-yellow-500 mb-8drop-shadow-[0_0_10px_rgba(234,179,8,0.6)]">
+    HUBUNGAN MASYARAKAT
+  </h3>
+
+  <div className="flex flex-col items-center group">
+    <div className="h-96 flex items-end justify-center">
+      <img
+        src="/pengurus90/rahmalia-arunita.png"
+        alt="Rahmalia Arunita"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-105"
+      />
+    </div>
+
+    <h4 className="text-xl font-bold mt-4">
+      Rahmalia Arunita
+    </h4>
+
+    <p className="text-yellow-500">
+      Koor. Hubungan Masyarakat
+    </p>
+  </div>
+
+  <div className="w-full border-t border-yellow-500/20 my-8"></div>
+
+  <div className="grid grid-cols-2 gap-6">
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/zharoh-cantika-lestari.png" alt="Zharoh Cantika Lestari" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Zharoh Cantika Lestari</h5>
+      <p className="text-xs text-gray-400">Sie. Hubungan Masyarakat</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/andrea-gloria-utomo.png" alt="Andrea Gloria Utomo" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Andrea Gloria Utomo</h5>
+      <p className="text-xs text-gray-400">Sie. Hubungan Masyarakat</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/callysta-agni-dzakiyyah.png" alt="Callysta Agni Dzakiyyah" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Callysta Agni Dzakiyyah</h5>
+      <p className="text-xs text-gray-400">Sie. Hubungan Masyarakat</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/aqeela-putri-arisy.png" alt="Aqeela Putri Arisy" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Aqeela Putri Arisy</h5>
+      <p className="text-xs text-gray-400">Sie. Hubungan Masyarakat</p>
+    </div>
+
+  </div>
+
+</div>
+
+      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center">
+
+  <h3 className="text-3xl font-bold text-yellow-500 mb-8drop-shadow-[0_0_10px_rgba(234,179,8,0.6)]">
+    BINA LATIHAN
+  </h3>
+
+  <div className="flex flex-col items-center group">
+    <div className="h-96 flex items-end justify-center">
+      <img
+        src="/pengurus90/morend-decca-raya.png"
+        alt="Morend Decca Raya"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-105"
+      />
+    </div>
+
+    <h4 className="text-xl font-bold mt-4">
+      Morend Decca Raya
+    </h4>
+
+    <p className="text-yellow-500">
+      Koor. Bina Latihan
+    </p>
+  </div>
+
+  <div className="w-full border-t border-yellow-500/20 my-8"></div>
+
+  <div className="grid grid-cols-2 gap-6">
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/ladzi-jaya-syuhada.png" alt="Ladzi Jaya Syuhada" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Ladzi Jaya Syuhada</h5>
+      <p className="text-xs text-gray-400">Sie. Bina Latihan</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/nindya-pratiwi.png" alt="Nindya Pratiwi" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Nindya Pratiwi</h5>
+      <p className="text-xs text-gray-400">Sie. Bina Latihan</p>
+    </div>
+
+    <div className="flex flex-col items-center col-span-2">
+      <img src="/pengurus90/ridho-firdaus.png" alt="Ridho Firdaus" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Ridho Firdaus</h5>
+      <p className="text-xs text-gray-400">Sie. Bina Latihan</p>
+    </div>
+
+  </div>
+
+</div>
+
+      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center">
+
+  <h3 className="text-3xl font-bold text-yellow-500 mb-8drop-shadow-[0_0_10px_rgba(234,179,8,0.6)]">
+    PERLENGKAPAN
+  </h3>
+
+  <div className="flex flex-col items-center group">
+    <div className="h-96 flex items-end justify-center">
+      <img
+        src="/pengurus90/marsha-novalianti.png"
+        alt="Marsha Novalianti"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-105"
+      />
+    </div>
+
+    <h4 className="text-xl font-bold mt-4">
+      Marsha Novalianti
+    </h4>
+
+    <p className="text-yellow-500">
+      Koor. Perlengkapan
+    </p>
+  </div>
+
+  <div className="w-full border-t border-yellow-500/20 my-8"></div>
+
+  <div className="grid grid-cols-2 gap-6">
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/dinda-aristi.png" alt="Dinda Aristi" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Dinda Aristi</h5>
+      <p className="text-xs text-gray-400">Sie. Perlengkapan</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/rizky-aditya-pratama.png" alt="Rizky Aditya Pratama" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Rizky Aditya Pratama</h5>
+      <p className="text-xs text-gray-400">Sie. Perlengkapan</p>
+    </div>
+
+  </div>
+
+</div>
+
+      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center">
+
+  <h3 className="text-3xl font-bold text-yellow-500 mb-8drop-shadow-[0_0_10px_rgba(234,179,8,0.6)]">
+    PERLOMBAAN
+  </h3>
+
+  <div className="flex flex-col items-center group">
+    <div className="h-96 flex items-end justify-center">
+      <img
+        src="/pengurus90/putri-violla-ramadhani.png"
+        alt="Putri Violla Ramadhani"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-105"
+      />
+    </div>
+
+    <h4 className="text-xl font-bold mt-4">
+      Putri Violla Ramadhani
+    </h4>
+
+    <p className="text-yellow-500">
+      Koor. Perlombaan
+    </p>
+  </div>
+
+  <div className="w-full border-t border-yellow-500/20 my-8"></div>
+
+  <div className="grid grid-cols-2 gap-6">
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/daffa-nur-ramadhan.png" alt="Daffa Nur Ramadhan" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Daffa Nur Ramadhan</h5>
+      <p className="text-xs text-gray-400">Sie. Perlombaan</p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <img src="/pengurus90/ayatusi-nur-syifa.png" alt="Ayatusi Nur Syifa" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Ayatusi Nur Syifa</h5>
+      <p className="text-xs text-gray-400">Sie. Perlombaan</p>
+    </div>
+
+    <div className="flex flex-col items-center col-span-2">
+      <img src="/pengurus90/muhammad-nuruz-zulrafif.png" alt="Muhammad Nuruz Zulrafif" className="h-44 object-contain" />
+      <h5 className="text-sm font-semibold mt-2 text-center">Muhammad Nuruz Zulrafif</h5>
+      <p className="text-xs text-gray-400">Sie. Perlombaan</p>
+    </div>
+
+  </div>
+
+</div>
+    </div>
+
+  </section>
+)}
+
 {title === "SPARTA 31" && (
   <section className="px-5 md:px-10 py-16">
+<h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+  PEMBINA & PELATIH SPARTA 31
+</h2>
+
+<div className="grid md:grid-cols-2 gap-16 mb-24">
+
+  <div className="flex flex-col items-center group">
+    <div className="h-96 flex items-end justify-center">
+      <img
+        src="/pengurus31/martini.png"
+        alt="Martini"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+      />
+    </div>
+
+```
+<h3 className="text-2xl font-bold mt-4">
+  Martini
+</h3>
+
+<p className="text-yellow-500">
+  Pembina
+</p>
+```
+
+  </div>
+
+  <div className="flex flex-col items-center group">
+    <div className="h-96 flex items-end justify-center">
+      <img
+        src="/pengurus31/fitra-akbar.png"
+        alt="Fitra Akbar"
+        className="max-h-full object-contain transition duration-500 group-hover:scale-110"
+      />
+    </div>
+
+```
+<h3 className="text-2xl font-bold mt-4">
+  Fitra Akbar
+</h3>
+
+<p className="text-yellow-500">
+  Pelatih
+</p>
+```
+
+  </div>
+
+</div>
 
     <h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
       BADAN PENGURUS HARIAN SPARTA 31
@@ -114,14 +525,24 @@ function UnitPage({ logo, title, school, data, onBack }) {
         </div>
         <h3 className="text-2xl font-bold mt-4">Iffa Dwi</h3>
         <p className="text-yellow-500">Sekretaris</p>
-        <div className="mt-4 border-t border-yellow-500/20 pt-3">
-  <p className="text-sm text-gray-300">
-    Nazwa Fauziyah
-  </p>
+<div className="mt-6 border-t border-yellow-500/20 pt-6 flex flex-col items-center">
 
-  <p className="text-xs text-gray-500">
+  <div className="h-64 flex items-end justify-center">
+    <img
+      src="/pengurus31/nazwa-fauziyah.png"
+      alt="Nazwa Fauziyah"
+      className="max-h-full object-contain"
+    />
+  </div>
+
+  <h4 className="text-lg font-semibold mt-3">
+    Nazwa Fauziyah
+  </h4>
+
+  <p className="text-gray-400 text-sm">
     Sie. Sekretaris
   </p>
+
 </div>
       </div>
 
@@ -135,14 +556,24 @@ function UnitPage({ logo, title, school, data, onBack }) {
         </div>
         <h3 className="text-2xl font-bold mt-4">Tsabita Zanzabila</h3>
         <p className="text-yellow-500">Bendahara</p>
-        <div className="mt-4 border-t border-yellow-500/20 pt-3">
-  <p className="text-sm text-gray-300">
-    Feenezia Malilah
-  </p>
+        <div className="mt-6 border-t border-yellow-500/20 pt-6 flex flex-col items-center">
 
-  <p className="text-xs text-gray-500">
+  <div className="h-64 flex items-end justify-center">
+    <img
+      src="/pengurus31/feenezia-malilah.png"
+      alt="Feenezia Malilah"
+      className="max-h-full object-contain"
+    />
+  </div>
+
+  <h4 className="text-lg font-semibold mt-3">
+    Feenezia Malilah
+  </h4>
+
+  <p className="text-gray-400 text-sm">
     Sie. Bendahara
   </p>
+
 </div>
       </div>
 
@@ -207,23 +638,47 @@ function UnitPage({ logo, title, school, data, onBack }) {
   Koor. Logistik
 </p>
 
-<div className="mt-4 border-t border-yellow-500/20 pt-3">
+<div className="mt-6 border-t border-yellow-500/20 pt-6">
 
-  <p className="text-sm text-gray-300">
-    Annisa Isna Kusuma
-  </p>
+  <div className="grid grid-cols-2 gap-4">
 
-  <p className="text-xs text-gray-500">
-    Sie. Logistik
-  </p>
+    <div className="flex flex-col items-center">
+      <div className="h-48 flex items-end justify-center">
+        <img
+          src="/pengurus31/annisa-isna-kusuma.png"
+          alt="Annisa Isna Kusuma"
+          className="max-h-full object-contain"
+        />
+      </div>
 
-  <p className="text-sm text-gray-300 mt-2">
-    Cahaya Khayla Putri
-  </p>
+      <h4 className="text-sm font-semibold mt-2 text-center">
+        Annisa Isna Kusuma
+      </h4>
 
-  <p className="text-xs text-gray-500">
-    Sie. Logistik
-  </p>
+      <p className="text-gray-400 text-xs">
+        Sie. Logistik
+      </p>
+    </div>
+
+    <div className="flex flex-col items-center">
+      <div className="h-48 flex items-end justify-center">
+        <img
+          src="/pengurus31/cahaya-khayla-putri.png"
+          alt="Cahaya Khayla Putri"
+          className="max-h-full object-contain"
+        />
+      </div>
+
+      <h4 className="text-sm font-semibold mt-2 text-center">
+        Cahaya Khayla Putri
+      </h4>
+
+      <p className="text-gray-400 text-xs">
+        Sie. Logistik
+      </p>
+    </div>
+
+  </div>
 
 </div>
     </div>
@@ -244,13 +699,21 @@ function UnitPage({ logo, title, school, data, onBack }) {
   Koor. Binlat
 </p>
 
-<div className="mt-4 border-t border-yellow-500/20 pt-3">
+<div className="mt-6 border-t border-yellow-500/20 pt-6 flex flex-col items-center">
 
-  <p className="text-sm text-gray-300">
+  <div className="h-56 flex items-end justify-center">
+    <img
+      src="/pengurus31/syakeela-lyvia.png"
+      alt="Syakeela Lyvia"
+      className="max-h-full object-contain scale-110"
+    />
+  </div>
+
+  <h4 className="text-lg font-semibold mt-2">
     Syakeela Lyvia
-  </p>
+  </h4>
 
-  <p className="text-xs text-gray-500">
+  <p className="text-gray-400 text-sm">
     Sie. Binlat
   </p>
 
@@ -273,13 +736,21 @@ function UnitPage({ logo, title, school, data, onBack }) {
   Koor. Bina Lomba
 </p>
 
-<div className="mt-4 border-t border-yellow-500/20 pt-3">
+<div className="mt-6 border-t border-yellow-500/20 pt-6 flex flex-col items-center">
 
-  <p className="text-sm text-gray-300">
+  <div className="h-56 flex items-end justify-center">
+    <img
+      src="/pengurus31/yuanita-kristin.png"
+      alt="Yuanita Kristin"
+      className="max-h-full object-contain scale-110"
+    />
+  </div>
+
+  <h4 className="text-lg font-semibold mt-2">
     Yuanita Kristin
-  </p>
+  </h4>
 
-  <p className="text-xs text-gray-500">
+  <p className="text-gray-400 text-sm">
     Sie. Bina Lomba
   </p>
 

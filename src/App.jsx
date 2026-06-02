@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const pspSparta = [
   ["Pembina", ["Desi Indah Kurniasari"]],
@@ -63,7 +63,7 @@ function UnitPage({ logo, title, school, data, onBack }) {
 {title === "PSP SPARTA" && (
   <section className="px-5 md:px-10 py-16">
 
-    <h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+    <h2 className="text-5xl font-bold text-center text-yellow-500 mb-20">
       PEMBINA & PELATIH PSP SPARTA
     </h2>
 
@@ -93,7 +93,7 @@ function UnitPage({ logo, title, school, data, onBack }) {
       </div>
     </div>
 
-<h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+<h2 className="text-5xl font-bold text-center text-yellow-500 mb-20">
   BADAN PENGURUS HARIAN PSP SPARTA
 </h2>
 
@@ -212,14 +212,16 @@ function UnitPage({ logo, title, school, data, onBack }) {
   </div>
 
 </div>
-    <h2 className="text-5xl font-bold text-center text-yellow-500 mb-16">
+<div className="w-64 h-px bg-yellow-500/30 mx-auto my-20">
+</div>
+    <h2 className="text-5xl font-bold text-center text-yellow-500 mb-20">
       KOORDINATOR BIDANG PSP SPARTA
     </h2>
 
     <div className="grid md:grid-cols-2 gap-10 mb-24">
-      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center">
+      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center transition-all duration-500 hover:-translate-y-2 hover:border-yellow-500/60">
 
-  <h3 className="text-3xl font-bold text-yellow-500 mb-8drop-shadow-[0_0_10px_rgba(234,179,8,0.6)]">
+  <h3 className="text-3xl font-bold text-yellow-500 mb-8 drop-shadow-[0_0_12px_rgba(234,179,8,0.7)]">
     HUBUNGAN MASYARAKAT
   </h3>
 
@@ -246,25 +248,25 @@ function UnitPage({ logo, title, school, data, onBack }) {
   <div className="grid grid-cols-2 gap-6">
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/zharoh-cantika-lestari.png" alt="Zharoh Cantika Lestari" className="h-44 object-contain" />
+      <img src="/pengurus90/zharoh-cantika-lestari.png" alt="Zharoh Cantika Lestari" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Zharoh Cantika Lestari</h5>
       <p className="text-xs text-gray-400">Sie. Hubungan Masyarakat</p>
     </div>
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/andrea-gloria-utomo.png" alt="Andrea Gloria Utomo" className="h-44 object-contain" />
+      <img src="/pengurus90/andrea-gloria-utomo.png" alt="Andrea Gloria Utomo" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Andrea Gloria Utomo</h5>
       <p className="text-xs text-gray-400">Sie. Hubungan Masyarakat</p>
     </div>
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/callysta-agni-dzakiyyah.png" alt="Callysta Agni Dzakiyyah" className="h-44 object-contain" />
+      <img src="/pengurus90/callysta-agni-dzakiyyah.png" alt="Callysta Agni Dzakiyyah" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Callysta Agni Dzakiyyah</h5>
       <p className="text-xs text-gray-400">Sie. Hubungan Masyarakat</p>
     </div>
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/aqeela-putri-arisy.png" alt="Aqeela Putri Arisy" className="h-44 object-contain" />
+      <img src="/pengurus90/aqeela-putri-arisy.png" alt="Aqeela Putri Arisy" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Aqeela Putri Arisy</h5>
       <p className="text-xs text-gray-400">Sie. Hubungan Masyarakat</p>
     </div>
@@ -273,9 +275,9 @@ function UnitPage({ logo, title, school, data, onBack }) {
 
 </div>
 
-      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center">
+      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center transition-all duration-500 hover:-translate-y-2 hover:border-yellow-500/60">
 
-  <h3 className="text-3xl font-bold text-yellow-500 mb-8drop-shadow-[0_0_10px_rgba(234,179,8,0.6)]">
+  <h3 className="text-3xl font-bold text-yellow-500 mb-8 drop-shadow-[0_0_12px_rgba(234,179,8,0.7)]">
     BINA LATIHAN
   </h3>
 
@@ -302,19 +304,19 @@ function UnitPage({ logo, title, school, data, onBack }) {
   <div className="grid grid-cols-2 gap-6">
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/ladzi-jaya-syuhada.png" alt="Ladzi Jaya Syuhada" className="h-44 object-contain" />
+      <img src="/pengurus90/ladzi-jaya-syuhada.png" alt="Ladzi Jaya Syuhada" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Ladzi Jaya Syuhada</h5>
       <p className="text-xs text-gray-400">Sie. Bina Latihan</p>
     </div>
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/nindya-pratiwi.png" alt="Nindya Pratiwi" className="h-44 object-contain" />
+      <img src="/pengurus90/nindya-pratiwi.png" alt="Nindya Pratiwi" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Nindya Pratiwi</h5>
       <p className="text-xs text-gray-400">Sie. Bina Latihan</p>
     </div>
 
     <div className="flex flex-col items-center col-span-2">
-      <img src="/pengurus90/ridho-firdaus.png" alt="Ridho Firdaus" className="h-44 object-contain" />
+      <img src="/pengurus90/ridho-firdaus.png" alt="Ridho Firdaus" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Ridho Firdaus</h5>
       <p className="text-xs text-gray-400">Sie. Bina Latihan</p>
     </div>
@@ -323,9 +325,9 @@ function UnitPage({ logo, title, school, data, onBack }) {
 
 </div>
 
-      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center">
+      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center transition-all duration-500 hover:-translate-y-2 hover:border-yellow-500/60">
 
-  <h3 className="text-3xl font-bold text-yellow-500 mb-8drop-shadow-[0_0_10px_rgba(234,179,8,0.6)]">
+  <h3 className="text-3xl font-bold text-yellow-500 mb-8 drop-shadow-[0_0_12px_rgba(234,179,8,0.7)]">
     PERLENGKAPAN
   </h3>
 
@@ -352,13 +354,13 @@ function UnitPage({ logo, title, school, data, onBack }) {
   <div className="grid grid-cols-2 gap-6">
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/dinda-aristi.png" alt="Dinda Aristi" className="h-44 object-contain" />
+      <img src="/pengurus90/dinda-aristi.png" alt="Dinda Aristi" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Dinda Aristi</h5>
       <p className="text-xs text-gray-400">Sie. Perlengkapan</p>
     </div>
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/rizky-aditya-pratama.png" alt="Rizky Aditya Pratama" className="h-44 object-contain" />
+      <img src="/pengurus90/rizky-aditya-pratama.png" alt="Rizky Aditya Pratama" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Rizky Aditya Pratama</h5>
       <p className="text-xs text-gray-400">Sie. Perlengkapan</p>
     </div>
@@ -367,9 +369,9 @@ function UnitPage({ logo, title, school, data, onBack }) {
 
 </div>
 
-      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center">
+      <div className="bg-zinc-950/70 border border-yellow-500/20 rounded-3xl p-8 flex flex-col items-center transition-all duration-500 hover:-translate-y-2 hover:border-yellow-500/60">
 
-  <h3 className="text-3xl font-bold text-yellow-500 mb-8drop-shadow-[0_0_10px_rgba(234,179,8,0.6)]">
+  <h3 className="text-3xl font-bold text-yellow-500 mb-8 drop-shadow-[0_0_12px_rgba(234,179,8,0.7)]">
     PERLOMBAAN
   </h3>
 
@@ -396,19 +398,19 @@ function UnitPage({ logo, title, school, data, onBack }) {
   <div className="grid grid-cols-2 gap-6">
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/daffa-nur-ramadhan.png" alt="Daffa Nur Ramadhan" className="h-44 object-contain" />
+      <img src="/pengurus90/daffa-nur-ramadhan.png" alt="Daffa Nur Ramadhan" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Daffa Nur Ramadhan</h5>
       <p className="text-xs text-gray-400">Sie. Perlombaan</p>
     </div>
 
     <div className="flex flex-col items-center">
-      <img src="/pengurus90/ayatusi-nur-syifa.png" alt="Ayatusi Nur Syifa" className="h-44 object-contain" />
+      <img src="/pengurus90/ayatusi-nur-syifa.png" alt="Ayatusi Nur Syifa" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Ayatusi Nur Syifa</h5>
       <p className="text-xs text-gray-400">Sie. Perlombaan</p>
     </div>
 
     <div className="flex flex-col items-center col-span-2">
-      <img src="/pengurus90/muhammad-nuruz-zulrafif.png" alt="Muhammad Nuruz Zulrafif" className="h-44 object-contain" />
+      <img src="/pengurus90/muhammad-nuruz-zulrafif.png" alt="Muhammad Nuruz Zulrafif" className="h-52 object-contain" />
       <h5 className="text-sm font-semibold mt-2 text-center">Muhammad Nuruz Zulrafif</h5>
       <p className="text-xs text-gray-400">Sie. Perlombaan</p>
     </div>
@@ -815,7 +817,62 @@ function UnitPage({ logo, title, school, data, onBack }) {
 
 export default function App() {
   const [page, setPage] = useState("home")
+  const [loading, setLoading] = useState(true)
 
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setLoading(false)
+  }, 1800)
+
+  return () => clearTimeout(timer)
+}, [])
+
+  const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  })
+}
+if (loading) {
+  return (
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center text-center">
+      <motion.img
+  src="/sparta-logo.png"
+  alt="SPARTA"
+  initial={{ scale: 0 }}
+  animate={{ scale: 1 }}
+  transition={{ duration: 0.8 }}
+  className="w-32 h-32 object-contain mb-6"
+/>
+
+
+      <h1 className="text-7xl font-bold tracking-[12px] text-yellow-500 drop-shadow-[0_0_30px_rgba(234,179,8,0.8)]">
+        SPARTA
+      </h1>
+
+      <p className="mt-4 text-gray-300 tracking-[6px] text-sm md:text-base">
+        MOLON LABE
+        SPARTA NEVER FALLS
+      </p>
+      <motion.p
+ initial={{ opacity: 0 }}
+ animate={{ opacity: 1 }}
+ transition={{ delay: 0.8 }}
+>
+ MOLON LABE • SPARTA NEVER FALLS
+</motion.p>
+
+      <div className="w-64 h-1 bg-zinc-800 rounded-full overflow-hidden">
+  <motion.div
+    className="h-full bg-gradient-to-r from-yellow-400 to-amber-500 shadow-[0_0_15px_rgba(234,179,8,0.9)]"
+    initial={{ width: 0 }}
+    animate={{ width: "100%" }}
+    transition={{ duration: 2 }}
+  />
+</div>
+      </div>
+  )
+}
   if (page === "psp") {
     return (
       <UnitPage
@@ -931,8 +988,11 @@ export default function App() {
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-10">
           <motion.div
-            whileHover={{ scale: 1.03 }}
-            className="bg-gradient-to-br from-red-950 to-black border border-yellow-500/30 rounded-3xl p-7 md:p-10 shadow-2xl"
+           whileHover={{
+           scale: 1.05,
+           y: -10,
+           }}
+            className="bg-gradient-to-br from-red-950 to-black border border-yellow-500/30 rounded-3xl p-7 md:p-10 shadow-2xl hover:shadow-yellow-500/30 transition-all duration-500"
           >
             <div className="flex items-center gap-4">
               <img src="/psp-sparta.png" alt="PSP SPARTA" className="w-16 h-16 object-contain" />
@@ -951,8 +1011,11 @@ export default function App() {
           </motion.div>
 
           <motion.div
-            whileHover={{ scale: 1.03 }}
-            className="bg-gradient-to-br from-zinc-900 to-black border border-white/20 rounded-3xl p-7 md:p-10 shadow-2xl"
+           whileHover={{
+           scale: 1.05,
+           y: -10,
+           }}
+            className="bg-gradient-to-br from-zinc-900 to-black border border-white/20 rounded-3xl p-7 md:p-10 shadow-2xl hover:shadow-white/30 transition-all duration-500"
           >
             <div className="flex items-center gap-4">
               <img src="/sparta31.png" alt="SPARTA 31" className="w-16 h-16 object-contain" />
@@ -989,6 +1052,14 @@ export default function App() {
           Sistem absensi pusat. Nanti datanya dipisah antara PSP SPARTA dan SPARTA 31.
         </p>
       </section>
+
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-6 right-6 bg-yellow-500 text-black w-12 h-12 rounded-full shadow-lg hover:scale-110 transition z-50"
+      >
+        ↑
+      </button>
+
     </div>
   )
 }

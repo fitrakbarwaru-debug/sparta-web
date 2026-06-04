@@ -814,6 +814,45 @@ function UnitPage({ logo, title, school, data, onBack }) {
     </div>
   )
 }
+const anggota90 = [
+  { nama: "Alif Pratama Alghifari", kelas: "11", jk: "Laki-laki", ttl: "-" },
+  { nama: "Cut Aura Vivian Hajar", kelas: "11", jk: "Perempuan", ttl: "-" },
+  { nama: "Daffa Nur Ramadhan", kelas: "11", jk: "Laki-laki", ttl: "-" },
+  { nama: "Dyah Putri Ramadhani", kelas: "11", jk: "Perempuan", ttl: "-" },
+  { nama: "Ladzi Jaya Syuhada", kelas: "11", jk: "Laki-laki", ttl: "-" },
+  { nama: "Marsha Novalianti", kelas: "11", jk: "Perempuan", ttl: "-" },
+  { nama: "Morend Decca Raya Kurniawan", kelas: "11", jk: "Laki-laki", ttl: "-" },
+  { nama: "Muhammad Siddik Febriyan", kelas: "11", jk: "Laki-laki", ttl: "-" },
+  { nama: "Nazah Sisilia Shafa", kelas: "11", jk: "Perempuan", ttl: "-" },
+  { nama: "Nindya Pratiwi", kelas: "11", jk: "Perempuan", ttl: "-" },
+  { nama: "Putri Violla Ramadhani", kelas: "11", jk: "Perempuan", ttl: "-" },
+  { nama: "Rahmalia Arunita", kelas: "11", jk: "Perempuan", ttl: "-" },
+  { nama: "Rizka Farisha", kelas: "11", jk: "Perempuan", ttl: "-" },
+
+  { nama: "Afifah Zahra Widiari", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Agni Faustin Hafifa", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Andrea Gloria Utomo", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Aqeela Putri Arisy", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Ayatusi Nur Syifa", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Callysta Agni Dzakiyyah", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Diaz Latifah", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Dinda Aristi", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Fina Khairunnisa", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Jihan Halwa Raisah", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Khoirun Nisa Nur Azizah", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Lanika Rianti Putri", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Muhammad Nuruz Zulrafif", kelas: "10", jk: "Laki-laki", ttl: "-" },
+  { nama: "Nazwa Novendria Azzahra", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Neysha Arnellita Prinadika", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Raisyah Aulia", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Ridho Firdaus", kelas: "10", jk: "Laki-laki", ttl: "-" },
+  { nama: "Rizky Aditya Pratama", kelas: "10", jk: "Laki-laki", ttl: "-" },
+  { nama: "Sekar Ayu Rahmanullah", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Syifa Nurhusna", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Syifa Syafitri Newal", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Zazkia Mega", kelas: "10", jk: "Perempuan", ttl: "-" },
+  { nama: "Zharoh Cantika Lestari", kelas: "10", jk: "Perempuan", ttl: "-" },
+]
 const anggota31 = [
   {
     nama: "Anisa Isna Kusuma",
@@ -1184,6 +1223,13 @@ if (loading) {
     )
   }
   if (page === "anggota31") {
+    const filteredAnggota31 = anggota31
+    .filter((anggota) =>
+      anggota.nama.toLowerCase().includes(searchAnggota.toLowerCase())
+  )
+    .filter((anggota) =>
+      filterKelas === "Semua" ? true : anggota.kelas.startsWith(filterKelas)
+  )
   return (
     <div className="bg-black text-white min-h-screen px-5 md:px-10 py-10">
       <button
@@ -1203,6 +1249,29 @@ if (loading) {
         onChange={(e) => setSearchAnggota(e.target.value)}
         className="w-full max-w-xl mx-auto block mb-10 px-5 py-4 rounded-xl bg-zinc-900 border border-yellow-500/30 text-white outline-none focus:border-yellow-500"
 />
+<div className="grid grid-cols-3 gap-4 mb-8">
+  <div className="bg-zinc-950 border border-yellow-500/20 rounded-2xl p-4 text-center">
+    <h3 className="text-3xl font-bold text-yellow-500">
+      {filteredAnggota31.length}
+    </h3>
+    <p className="text-sm text-gray-300">Total</p>
+  </div>
+
+  <div className="bg-zinc-950 border border-yellow-500/20 rounded-2xl p-4 text-center">
+    <h3 className="text-3xl font-bold text-yellow-500">
+      {filteredAnggota31.filter(a => a.jk === "Laki-laki").length}
+    </h3>
+    <p className="text-sm text-gray-300">Laki-laki</p>
+  </div>
+
+  <div className="bg-zinc-950 border border-yellow-500/20 rounded-2xl p-4 text-center">
+    <h3 className="text-3xl font-bold text-yellow-500">
+      {filteredAnggota31.filter(a => a.jk === "Perempuan").length}
+    </h3>
+    <p className="text-sm text-gray-300">Perempuan</p>
+  </div>
+</div>
+
 <div className="flex justify-center gap-3 mb-10 flex-wrap">
   <button
    onClick={() => setFilterKelas("Semua")}
@@ -1272,7 +1341,124 @@ if (loading) {
     </div>
   )
 }
+if (page === "anggota90") {
+  const filteredAnggota90 = anggota90
+  .filter((anggota) =>
+      anggota.nama.toLowerCase().includes(searchAnggota.toLowerCase())
+    )
+    .filter((anggota) =>
+      filterKelas === "Semua" ? true : anggota.kelas.startsWith(filterKelas)
+    )
+  return (
+    <div className="bg-black text-white min-h-screen px-5 md:px-10 py-10">
+      <button
+        onClick={() => setPage("home")}
+        className="text-yellow-500 hover:text-white transition mb-10"
+      >
+        ← Kembali ke SPARTA Center
+      </button>
 
+      <h1
+        className="text-4xl md:text-6xl font-bold text-yellow-500 text-center mb-12">
+        DATA ANGGOTA PSP SPARTA
+      </h1>
+      <input
+        type="text"
+        placeholder="Cari nama anggota..."
+
+        onChange={(e) => setSearchAnggota(e.target.value)}
+        className="w-full max-w-xl mx-auto block mb-10 px-5 py-4 rounded-xl bg-zinc-900 border border-yellow-500/30 text-white outline-none focus:border-yellow-500"
+/>
+<div className="grid grid-cols-3 gap-4 mb-8">
+  <div className="bg-zinc-950 border border-yellow-500/20 rounded-2xl p-4 text-center">
+    <h3 className="text-3xl font-bold text-yellow-500">
+      {filteredAnggota90.length}
+    </h3>
+    <p className="text-sm text-gray-300">
+      Total
+    </p>
+  </div>
+
+  <div className="bg-zinc-950 border border-yellow-500/20 rounded-2xl p-4 text-center">
+    <h3 className="text-3xl font-bold text-yellow-500">
+      {filteredAnggota90.filter(a => a.jk === "Laki-laki").length}
+    </h3>
+    <p className="text-sm text-gray-300">
+      Laki-laki
+    </p>
+  </div>
+
+  <div className="bg-zinc-950 border border-yellow-500/20 rounded-2xl p-4 text-center">
+    <h3 className="text-3xl font-bold text-yellow-500">
+      {filteredAnggota90.filter(a => a.jk === "Perempuan").length}
+    </h3>
+    <p className="text-sm text-gray-300">
+      Perempuan
+    </p>
+  </div>
+</div>
+<div className="flex justify-center gap-3 mb-10 flex-wrap">
+  <button
+   onClick={() => setFilterKelas("Semua")}
+   className={`px-4 py-2 rounded-lg ${
+    filterKelas === "Semua"
+    ? "bg-yellow-500 text-black"
+        : "bg-zinc-900 border border-yellow-500/30 text-white"
+    }`}
+  >
+    Semua
+  </button>
+
+  <button
+    onClick={() => setFilterKelas("10")}
+    className={`px-4 py-2 rounded-lg ${
+      filterKelas === "7"
+        ? "bg-yellow-500 text-black"
+        : "bg-zinc-900 border border-yellow-500/30 text-white"
+    }`}
+  >
+    Kelas 10
+  </button>
+
+  <button
+    onClick={() => setFilterKelas("11")}
+    className={`px-4 py-2 rounded-lg ${
+      filterKelas === "8"
+        ? "bg-yellow-500 text-black"
+        : "bg-zinc-900 border border-yellow-500/30 text-white"
+    }`}
+  >
+    Kelas 11
+  </button>
+</div>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        {filteredAnggota90.map((anggota, index) => (
+          <div
+            key={index}
+            className="bg-zinc-950 border border-yellow-500/20 rounded-2xl p-6 hover:border-yellow-500/60 transition"
+          >
+            <h3 className="text-xl font-bold text-yellow-500">
+              {anggota.nama}
+            </h3>
+
+            <p className="text-gray-300 mt-3">
+              Kelas: {anggota.kelas}
+            </p>
+
+            <p className="text-gray-300">
+              Jenis Kelamin: {anggota.jk}
+            </p>
+
+            <p className="text-gray-400 text-sm mt-3">
+              TTL: {anggota.ttl}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
   return (
     <div className="bg-black text-white min-h-screen">
       <section className="relative min-h-screen overflow-hidden">
@@ -1379,12 +1565,20 @@ if (loading) {
             </div>
 
             <button
-              onClick={() => setPage("psp")}
-              className="mt-8 px-6 py-3 bg-yellow-500 text-black rounded-xl font-semibold hover:scale-105 transition"
-            >
-              MASUK RUANG 90
-            </button>
-          </motion.div>
+          onClick={() => setPage("psp")}
+          className="mt-8 px-6 py-3 bg-yellow-500 text-black rounded-xl font-semibold hover:scale-105 transition"
+>
+    MASUK RUANG 90
+    </button>
+
+    <button
+      onClick={() => setPage("anggota90")}
+      className="mt-4 px-6 py-3 border border-yellow-500/30 text-yellow-500 rounded-xl font-semibold hover:bg-yellow-500 hover:text-black transition"
+>
+    DATA ANGGOTA 90
+    </button>
+
+      </motion.div>
 
           <motion.div
            whileHover={{

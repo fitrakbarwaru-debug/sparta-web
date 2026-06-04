@@ -814,10 +814,296 @@ function UnitPage({ logo, title, school, data, onBack }) {
     </div>
   )
 }
-
+const anggota31 = [
+  {
+    nama: "Anisa Isna Kusuma",
+    kelas: "8B",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Annisa Azzahra",
+    kelas: "8B",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Farhan Ardiansyah",
+    kelas: "8H",
+    jk: "Laki-laki",
+    ttl: "-",
+  },
+  {
+    nama: "Galang Fajaru Sya'baan",
+    kelas: "8B",
+    jk: "Laki-laki",
+    ttl: "-",
+  },
+  {
+    nama: "Hayyu Rofifah Kanesha Humaira",
+    kelas: "8A",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Iffa Dwi Ramadhani",
+    kelas: "8D",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Karla Aleena Ramadhani",
+    kelas: "8G",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Nadine Felisya",
+    kelas: "8D",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Nazwa Fauziyah",
+    kelas: "8E",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Putri Sekar Ayu",
+    kelas: "8H",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Rafael Al Fariji",
+    kelas: "8G",
+    jk: "Laki-laki",
+    ttl: "-",
+  },
+  {
+    nama: "Rafli Affanka",
+    kelas: "8D",
+    jk: "Laki-laki",
+    ttl: "-",
+  },
+  {
+    nama: "Rajib Maula Asyfa",
+    kelas: "8D",
+    jk: "Laki-laki",
+    ttl: "-",
+  },
+  {
+    nama: "Safattamim Efendi",
+    kelas: "8D",
+    jk: "Laki-laki",
+    ttl: "-",
+  },
+  {
+    nama: "Salsa Safitry",
+    kelas: "8A",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Syakeela Lyvia Azzalea Shagufta",
+    kelas: "8H",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Tiara Putri",
+    kelas: "8C",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  {
+    nama: "Tsabit Fadhlan Arrazin",
+    kelas: "8G",
+    jk: "Laki-laki",
+    ttl: "-",
+  },
+  {
+    nama: "Tsabita Zanzabila",
+    kelas: "8H",
+    jk: "Perempuan",
+    ttl: "-",
+  },
+  ,
+{
+  nama: "Ashillah Zahwa Wijanarko",
+  kelas: "7F",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Assyifa Nazhirra",
+  kelas: "7D",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Azzahra Kinar Setiawan",
+  kelas: "7F",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Cahaya Khayla Putri",
+  kelas: "7B",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Dita Indah Sari",
+  kelas: "7B",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Feenezia Malilah Annabelle",
+  kelas: "7D",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Gisella Putri Christianti",
+  kelas: "7F",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Indah Jazylah",
+  kelas: "7B",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Jihan Dwi N.",
+  kelas: "7C",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Kayla Putri Achmad",
+  kelas: "7D",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Khanza Kadhitya Sabrien",
+  kelas: "7G",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Khanzzanah Khanza",
+  kelas: "7G",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Maira Cherly Chantika",
+  kelas: "7G",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Melia Putri Sabiya",
+  kelas: "7F",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Muzahira",
+  kelas: "7D",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Nayla Antin Damasari",
+  kelas: "7B",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Quinta Cikal Anjani",
+  kelas: "7B",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Raissa Isnaini Salsabila",
+  kelas: "7D",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Rasyah Maulana Bilqhis",
+  kelas: "7",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Regina Anastasya",
+  kelas: "7D",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Rhaniaqyla Ramadhaselly",
+  kelas: "7C",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Safa Malikha",
+  kelas: "7B",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Saskia Kharisma Putri",
+  kelas: "7A",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Shafira Putri J.",
+  kelas: "7C",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Silvi Karina Dewi",
+  kelas: "7E",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Yuanita Kristin",
+  kelas: "7C",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Zahra Adiba Sabilla",
+  kelas: "7A",
+  jk: "Perempuan",
+  ttl: "-",
+},
+{
+  nama: "Zahra Aisyah Putrie",
+  kelas: "7E",
+  jk: "Perempuan",
+  ttl: "-",
+}
+]
 export default function App() {
   const [page, setPage] = useState("home")
   const [loading, setLoading] = useState(true)
+  const [searchAnggota, setSearchAnggota] = useState("")
+  const [filterKelas, setFilterKelas] = useState("Semua")
 
 useEffect(() => {
   const timer = setTimeout(() => {
@@ -887,6 +1173,7 @@ if (loading) {
 
   if (page === "sparta31") {
     return (
+
       <UnitPage
         logo="/sparta31.png"
         title="SPARTA 31"
@@ -896,6 +1183,95 @@ if (loading) {
       />
     )
   }
+  if (page === "anggota31") {
+  return (
+    <div className="bg-black text-white min-h-screen px-5 md:px-10 py-10">
+      <button
+        onClick={() => setPage("home")}
+        className="text-yellow-500 hover:text-white transition mb-10"
+      >
+        ← Kembali ke SPARTA Center
+      </button>
+
+      <h1
+        className="text-4xl md:text-6xl font-bold text-yellow-500 text-center mb-12">
+        DATA ANGGOTA SPARTA 31
+      </h1>
+      <input
+        type="text"
+        placeholder="Cari nama anggota..."
+        onChange={(e) => setSearchAnggota(e.target.value)}
+        className="w-full max-w-xl mx-auto block mb-10 px-5 py-4 rounded-xl bg-zinc-900 border border-yellow-500/30 text-white outline-none focus:border-yellow-500"
+/>
+<div className="flex justify-center gap-3 mb-10 flex-wrap">
+  <button
+   onClick={() => setFilterKelas("Semua")}
+   className={`px-4 py-2 rounded-lg ${
+    filterKelas === "Semua"
+    ? "bg-yellow-500 text-black"
+        : "bg-zinc-900 border border-yellow-500/30 text-white"
+    }`}
+  >
+    Semua
+  </button>
+
+  <button
+    onClick={() => setFilterKelas("7")}
+    className={`px-4 py-2 rounded-lg ${
+      filterKelas === "7"
+        ? "bg-yellow-500 text-black"
+        : "bg-zinc-900 border border-yellow-500/30 text-white"
+    }`}
+  >
+    Kelas 7
+  </button>
+
+  <button
+    onClick={() => setFilterKelas("8")}
+    className={`px-4 py-2 rounded-lg ${
+      filterKelas === "8"
+        ? "bg-yellow-500 text-black"
+        : "bg-zinc-900 border border-yellow-500/30 text-white"
+    }`}
+  >
+    Kelas 8
+  </button>
+</div>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        {anggota31
+       .filter((anggota) =>
+        anggota.nama.toLowerCase().includes(searchAnggota.toLowerCase())
+)
+       .filter((anggota) =>
+        filterKelas === "Semua" ? true : anggota.kelas.startsWith(filterKelas)
+)
+       .map((anggota, index) => (
+          <div
+            key={index}
+            className="bg-zinc-950 border border-yellow-500/20 rounded-2xl p-6 hover:border-yellow-500/60 transition"
+          >
+            <h3 className="text-xl font-bold text-yellow-500">
+              {anggota.nama}
+            </h3>
+
+            <p className="text-gray-300 mt-3">
+              Kelas: {anggota.kelas}
+            </p>
+
+            <p className="text-gray-300">
+              Jenis Kelamin: {anggota.jk}
+            </p>
+
+            <p className="text-gray-400 text-sm mt-3">
+              TTL: {anggota.ttl}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
 
   return (
     <div className="bg-black text-white min-h-screen">
@@ -1027,10 +1403,17 @@ if (loading) {
 
             <button
               onClick={() => setPage("sparta31")}
-              className="mt-8 px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
-            >
+              className="mt-8 px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition">
+
               MASUK RUANG 31
-            </button>
+             </button>
+
+             <button
+             onClick={() => setPage("anggota31")}
+             className="mt-4 px-6 py-3 border border-white/30 text-white rounded-xl font-semibold hover:bg-white hover:text-black transition"
+>
+  DATA ANGGOTA 31
+</button>
           </motion.div>
         </div>
       </section>
